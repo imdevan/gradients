@@ -1,0 +1,12 @@
+
+body {
+  margin: 0;
+}
+
+.app {
+  box-shadow: 0 0 25px rgba(black, 0.5);
+
+  &Content {
+    font-size: 1em;
+  }
+}
