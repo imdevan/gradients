@@ -72,6 +72,7 @@ app.use((req, res) => {
 
   function hydrateOnClient() {
     res.send('<!doctype html>\n' +
+      ReactDOM.renderToString(<Html store={store}/>));
   }
 
   if (__DISABLE_SSR__) {
@@ -99,6 +100,7 @@ app.use((req, res) => {
         global.navigator = {userAgent: req.headers['user-agent']};
 
         res.send('<!doctype html>\n' +
+          ReactDOM.renderToString(<Html component={component} store={store}/>));
       });
     } else {
       res.status(404).send('Not found');
