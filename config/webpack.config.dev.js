@@ -1,5 +1,6 @@
 var path = require('path');
 var autoprefixer = require('autoprefixer');
+var precss = require('precss');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -64,7 +65,7 @@ module.exports = {
         loader: 'json'
       },
       {
-        test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(jpg|png|gif|svg|eot|ttf|woff|woff2)(\?.*)?$/,
         include: [paths.appSrc, paths.appNodeModules],
         loader: 'file',
         query: {
@@ -87,7 +88,7 @@ module.exports = {
     useEslintrc: false
   },
   postcss: function() {
-    return [autoprefixer];
+    return [autoprefixer, precss];
   },
   plugins: [
     new HtmlWebpackPlugin({

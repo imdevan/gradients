@@ -1,3 +1,5 @@
+@import './index.css';
+
 .App {
   text-align: center;
 }
@@ -5,6 +7,42 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+}
+
+.App-icon {
+  & > svg, & > img {
+    fill: var(--light-gray);
+    stroke: var(--light-gray);
+    transition: all 0.1s ease;
+    filter: drop-shadow(4px 4px 0px var(--pink));
+    height: 48px;
+    width: auto;
+  }
+
+  &:hover {
+    & > svg, & > img {
+      fill: var(--light-gray);
+      stroke: var(--light-gray);
+      transform: translateY(-4px);
+      filter: drop-shadow(4px 8px 0px var(--pink));
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    & > svg, & > img {
+      filter: drop-shadow(4px 4px 0px var(--pink));
+      transform: translateY(0px);
+    }
+  }
+}
+
+.App-highlight {
+  color: var(--light-gray);
+  transition: all 0.1s ease;
+  filter: drop-shadow(4px 4px 0px var(--pink));
+  height: 48px;
+  width: auto;
 }
 
 .App-header {
@@ -21,4 +59,8 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.background-contaienr {
+  transition: all 0.5s ease;
 }

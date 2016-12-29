@@ -18,7 +18,7 @@ class PeopleContainer extends Component {
     const {people} = this.props;
 
     return (
-      <div>
+      <div  className="pa5">
         <PersonInput addPerson={this.props.actions.addPerson} />
         <PeopleList people={people} />
       </div>

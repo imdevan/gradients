@@ -1,8 +1,8 @@
-import people from './people-reducer.js';
+import colors from './background-reducer.js';
 import {combineReducers} from 'redux';
 
 const rootReducer = combineReducers({
-  people
+  colors
 });
 
 export default rootReducer;

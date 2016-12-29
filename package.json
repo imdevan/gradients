@@ -44,10 +44,20 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "copy-to-clipboard": "^3.0.5",
+    "grade-js": "^1.0.10",
+    "node-sass": "^4.0.0",
+    "precss": "^1.4.0",
+    "randomcolor": "^0.4.4",
+    "raw-loader": "^0.5.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-redux": "^4.4.5",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "sass-loader": "^4.1.0",
+    "svg-inline-loader": "^0.7.1",
+    "svg-inline-react": "^1.0.2",
+    "tachyons": "^4.6.1"
   },
   "scripts": {
     "start": "node ./scripts/start.js",
