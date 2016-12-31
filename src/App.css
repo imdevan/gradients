@@ -35,6 +35,15 @@
       transform: translateY(0px);
     }
   }
+
+  &--spin {
+    &:active {
+      & > svg, & > img {
+        filter: drop-shadow(4px 4px 0px var(--pink));
+        transform: translateY(0px) rotate(-180deg);
+      }
+    }
+  }
 }
 
 .App-highlight {
