@@ -11,10 +11,12 @@ import rootReducer from './reducers/index';
 
 // Default data
 const colors = [randomColor(colorOptions), randomColor(colorOptions)];
+const toast = 'hide';
 
 // create an object for the default data
 const defaultState = {
-  colors
+  colors,
+  toast
 };
 
 const enhancers = compose(

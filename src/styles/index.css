@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --pink: #FCE0DA;
+  --white: #ffffff;
+  --white-op-quarter: rgba(255,255,255, 0.25);
+  --black: #000;
+  --black-op-quarter: rgba(0,0,0, 0.25);
+  --light-green: #D2E8E5;
+  --light-blue: #DBEFF8;
+  --light-gray: #4d4d4d;
+}

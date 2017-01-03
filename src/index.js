@@ -3,7 +3,8 @@ import { render } from 'react-dom';
 
 // Import css
 import 'tachyons';
-import './App.css';
+import './styles/app.css';
+
 
 // Import Components
 import App from './components/App';

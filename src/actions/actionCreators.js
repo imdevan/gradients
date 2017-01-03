@@ -1,10 +1,8 @@
-import {SET_BACKGROUND} from './actionTypes';
-
 // increment
-export function increment(index) {
+export function doToast(toast) {
   return {
-    type: SET_BACKGROUND,
-    index
+    type: 'DO_TOAST',
+    toast
   }
 }
 

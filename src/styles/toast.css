@@ -1,0 +1,12 @@
+.toast {
+  position: absolute;
+  left: 50%;
+  transform: translateY(-100px) translateX(-50%);
+  transition: all 0.2s ease;
+  opacity: 0;
+
+  &[data-show='show'] {
+    transform: translateY(-150px) translateX(-50%);
+    opacity: 1;
+  }
+}
