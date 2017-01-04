@@ -6,8 +6,9 @@ import { browserHistory } from 'react-router';
 import randomColor from 'randomcolor';
 import {colorOptions} from './data/config';
 
-// import the root reducer
+// import the root reducerimag
 import rootReducer from './reducers/index';
+
 
 // Default data
 const colors = [randomColor(colorOptions), randomColor(colorOptions)];

@@ -6,7 +6,8 @@ import Main from './Main';
 function mapStateToProps(state) {
   return {
     colors: state.colors,
-    toast: state.toast
+    toast: state.toast,
+    image: state.image
   }
 }
 

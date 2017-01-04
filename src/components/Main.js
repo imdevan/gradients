@@ -1,8 +1,7 @@
-// Modules
+ // Modules
 import React from 'react';
 import copy from 'copy-to-clipboard';
 import randomColor from 'randomcolor';
-import { Link } from 'react-router';
 
 // Components
 import Toast from './Toast';
@@ -14,14 +13,15 @@ import uploadImageIcon from '../svgs/upload-image-icon.svg';
 
 // Config
 import {colorOptions} from '../data/config';
+import DropzoneDemo from './Dropzone';
 
 const Main = React.createClass({
   render() {
     const {colors, changeColors, toast, doToast} = this.props;
-    console.log(toast);
     let bgStyle = {
       background: `linear-gradient(to top right, ${colors[0]}, ${colors[1]})`
     };
+
 
     function copyBackground(e) {
       copy(`background: ${bgStyle.background};`);
@@ -45,7 +45,6 @@ const Main = React.createClass({
     return (
       <div className='vh-100 pa5-ns' id='background-container' style={bgStyle}>
           <div className='flex items-center justify-center h-100'>
-
           <div className='center relative'>
               <h2 className='code tc f3 f1-ns h-100 v-mid mb5 white ds-white' id='bg-label'>
                   <span className="br-pill bg-white pa3"style={{color: colors[0]}}>{colors[0]}</span>&nbsp;👉&nbsp;
@@ -67,7 +66,7 @@ const Main = React.createClass({
                 </i>
               </div>
               <div className='dtc tc'>
-                <i onClick={copyBackground}  className='App-icon'>
+                <i className='App-icon'>
                   <img src={uploadImageIcon} alt='copy'/>
                 </i>
               </div>
