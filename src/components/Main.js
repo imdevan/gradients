@@ -65,7 +65,7 @@ const Main = React.createClass({
 
     function spin() {
       console.log('called');
-      const newDir = (directions.findIndex(x => x.deg==direction.deg)+1) % directions.length;
+      const newDir = (directions.findIndex(x => x.deg===direction.deg)+1) % directions.length;
       console.log(newDir);
       console.log(directions[newDir]);
       changeDirection(
