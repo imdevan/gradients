@@ -1,8 +1,8 @@
 
 .ds-white {
-  filter: drop-shadow(4px 4px 12px var(--white));
+  filter: var(--filter);
 }
 
 .ts-white {
-  text-shadow: 4px 4px 12px var(--white);
+  text-shadow: var(--text-shadow);
 }
