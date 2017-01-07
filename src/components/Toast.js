@@ -6,7 +6,7 @@ const Toast = React.createClass({
     const {toast} = this.props;
 
     return (
-      <div className='toast fs-normal bg-white pa2 br-pill shadow-5'
+      <div className='toast fs-normal bg-white pa2 br-pill ds-white'
         data-show={toast}>
         {React.cloneElement({...this.props}.children)}
       </div>

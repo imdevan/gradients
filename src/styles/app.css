@@ -1,45 +1,4 @@
 @import './index.css';
 @import './toast.css';
-
-.ds-white {
-  filter: drop-shadow(4px 4px 12px var(--white));
-}
-
-.App-icon {
-  & > svg, & > img {
-    fill: var(--white);
-    stroke: var(--white);
-    transition: all 0.1s ease;
-    filter: drop-shadow(4px 4px 12px var(--white));
-    height: 48px;
-    width: auto;
-  }
-  & > img > svg {
-    fill: var(--white);
-  }
-  &:hover {
-    & > svg, & > img {
-      fill: var(--white);
-      stroke: var(--white);
-      transform: translateY(-4px);
-      filter: drop-shadow(4px 8px 12px var(--white));
-      cursor: pointer;
-    }
-  }
-
-  &:active {
-    & > svg, & > img {
-      filter: drop-shadow(4px 4px 12px var(--white));
-      transform: translateY(0px);
-    }
-  }
-
-  &--spin {
-    &:active {
-      & > svg, & > img {
-        filter: drop-shadow(4px 4px 12px var(--white));
-        transform: translateY(0px) rotate(-180deg);
-      }
-    }
-  }
-}
+@import './drop-shadow.css';
+@import './icon.css';

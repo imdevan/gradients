@@ -22,7 +22,7 @@ const router = (
       <Route path="/" component={App}>
         <IndexRoute component={Home}></IndexRoute>
         <Route path="/about" component={About}></Route>
-        <Route path="/test/:slug" component={Home}></Route>
+        <Route path="/:slug/:slug/:slug" component={App}></Route>
       </Route>
     </Router>
   </Provider>

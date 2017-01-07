@@ -5,6 +5,7 @@ import { browserHistory } from 'react-router';
 // Random colors for default state
 import randomColor from 'randomcolor';
 import {colorOptions} from './data/config';
+import directions from './data/directions';
 
 // import the root reducer
 import rootReducer from './reducers/index';
@@ -12,11 +13,13 @@ import rootReducer from './reducers/index';
 // Default data
 const colors = [randomColor(colorOptions), randomColor(colorOptions)];
 const toast = 'hide';
+const direction =  directions[0];
 
 // create an object for the default data
 const defaultState = {
   colors,
-  toast
+  toast,
+  direction
 };
 
 const enhancers = compose(

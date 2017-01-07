@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "copy-to-clipboard": "^3.0.5",
+    "dom-to-image": "^2.5.2",
     "grade-js": "^1.0.10",
     "node-sass": "^4.0.0",
     "precss": "^1.4.0",

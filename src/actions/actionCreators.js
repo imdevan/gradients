@@ -1,4 +1,3 @@
-// increment
 export function doToast(toast) {
   return {
     type: 'DO_TOAST',
@@ -6,20 +5,15 @@ export function doToast(toast) {
   }
 }
 
-// add comment
 export function changeColors(colors) {
   return {
     type: 'CHANGE_COLORS',
     colors
   }
 }
-
-// remove comment
-
-export function removeComment(postId, i) {
+export function changeDirection(direction) {
   return {
-    type: 'REMOVE_COMMENT',
-    i,
-    postId
+    type: 'CHANGE_DIRECTION',
+    direction
   }
 }
