@@ -7,7 +7,8 @@ import '../styles/toast.css';
     const styleAtribute = {
       color,
       filter: `drop-shadow(4px 4px 12px ${color})`,
-      cursor: 'pointer'
+      cursor: 'pointer',
+      overflow: 'show'
     };
     return (
       <span className='br-pill bg-white pa3' style={styleAtribute}>

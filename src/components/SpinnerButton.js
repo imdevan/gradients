@@ -7,7 +7,8 @@ const SpinnerButton = React.createClass({
       transform: `rotate(${deg})`,
       display: 'block',
       cursor: 'pointer',
-      userSelect: 'none'
+      userSelect: 'none',
+      overflow: 'show'
     };
 
     return (
