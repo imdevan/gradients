@@ -76,7 +76,7 @@ const Main = React.createClass({
     return (
       <div className='vh-100 pa5-ns' id='background-container' style={bgStyle}>
           <div className='flex items-center justify-center h-100'>
-          <div className='center relative'  id='inside-container' >
+          <div className='center relative overflow'  id='inside-container' >
               <h2 className='code tc f3 f1-ns h-100 v-mid mb5 white ' id='bg-label'>
                   <ColorButton color={colors[0]} key={0} />&nbsp;
                   <i onClick={spin.bind(this)}>
